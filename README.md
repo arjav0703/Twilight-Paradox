@@ -1,8 +1,7 @@
 # Twilight Paradox
 
-![Twilight Paradox Logo](path/to/logo.png)
 
-Welcome to **Twilight Paradox**, an exhilarating game inspired by the magical sport of Quidditch! In this fast-paced, multiplayer experience, players take control of two identical witch characters in a whimsical world where the objective is to chase and catch a mystical ball. 
+Welcome to **Twilight Paradox**, an exhilarating two-player game inspired by the magical sport of Quidditch! In this fast-paced, multiplayer experience, players take control of two identical witch characters in a whimsical world where the objective is to chase and catch a mystical ball. 
 
 ## Table of Contents
 
@@ -11,7 +10,6 @@ Welcome to **Twilight Paradox**, an exhilarating game inspired by the magical sp
 - [Installation](#installation)
 - [Controls](#controls)
 - [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ## Features
@@ -44,5 +42,45 @@ To get started with **Twilight Paradox**, follow these simple steps:
 4. Run the game:
    ```bash
    love .
+
+## Controls
+
+### Player 1:
+
+    Move Up: W
+    Move Down: S
+    Move Left: A
+    Move Right: D
+
+### Player 2:
+   
+    Move Up: Arrow Up
+    Move Down: Arrow Down
+    Move Left: Arrow Left
+    Move Right: Arrow Right
+
+## Contributing
+
+### We welcome contributions to improve Twilight Paradox! If you'd like to help out, please follow these steps:
+
+    1. Fork the repository.
+    2. Create a new branch (git checkout -b feature-branch).
+    3  Make your changes and commit them (git commit -m 'Add new feature').
+    4. Push to the branch (git push origin feature-branch).
+    5. Open a Pull Request.
+
+## Contact
+
+For inquiries, suggestions, or feedback, feel free to reach out:
+
+    Email: arjavjain0703@gmail.com
+    Discord: @madmax000108
+
+### Thank you for checking out Twilight Paradox! We hope you enjoy the game and have as much fun playing it as we had creating it! Happy catching! 🧙‍♀️✨
+
+
+
+
+
   
    
