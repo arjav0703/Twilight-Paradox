@@ -37,7 +37,7 @@ To get started with **Twilight Paradox**, follow these simple steps:
    git clone https://github.com/arjav0703/Twilight-Paradox.git
 2. **Navigate to the project directory:**:
    ```bash
-   cd twilight-paradox
+   cd Twilight-paradox
 3. **Install Love2D: Follow the instructions on the Love2D website to install the framework.**:
 4. Run the game:
    ```bash
