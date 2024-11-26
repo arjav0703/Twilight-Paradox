@@ -2,16 +2,15 @@ push = require 'push'
 
 Class = require 'class'
 
-require 'Paddle'
+require 'char'
 
 require 'Ball'
 
-WINDOW_WIDTH = 1280
-WINDOW_HEIGHT = 720
-VIRTUAL_WIDTH = 432
-VIRTUAL_HEIGHT = 243
-PADDLE_SPEED = 100
-
+win_width = 1280
+win_height = 720
+vir_width = 432
+vir_height = 243
+character_speed = 100
 
 function love.load()
     
@@ -32,7 +31,7 @@ function love.load()
 
     love.graphics.setFont(smallFont)
 
-    push:setupScreen(VIRTUAL_WIDTH, VIRTUAL_HEIGHT, WINDOW_WIDTH, WINDOW_HEIGHT, {
+    push:setupScreen(vir_width, vir_height, win_width, win_height, {
         fullscreen = false,
         resizable = false,
         vsync = true
@@ -41,10 +40,10 @@ function love.load()
     player1Score = 0
     player2Score = 0
 
-    player1 = Paddle(VIRTUAL_WIDTH - 100, VIRTUAL_HEIGHT - 200, 5, 20)
-    player2 = Paddle(VIRTUAL_WIDTH - 100, VIRTUAL_HEIGHT - 100, 5, 20)
+    player1 = char(vir_width - 100, vir_height - 200, 5, 20)
+    player2 = char(vir_width - 100, vir_height - 100, 5, 20)
 
-    ball = Ball(VIRTUAL_WIDTH / 2 - 2, VIRTUAL_HEIGHT / 2 - 2, 4, 4)
+    ball = Ball(vir_width / 2 - 2, vir_height / 2 - 2, 4, 4)
 
     gameState = 'start'
 
@@ -93,8 +92,8 @@ function love.update(dt)
             love.audio.play(sounds.wall)
         end
 
-        if ball.y >= VIRTUAL_HEIGHT - 4 then
-            ball.y = VIRTUAL_HEIGHT - 4
+        if ball.y >= vir_height - 4 then
+            ball.y = vir_height - 4
             ball.dy = -ball.dy
             love.audio.play(sounds.wall)
         end
@@ -106,8 +105,8 @@ function love.update(dt)
         love.audio.play(sounds.wall)
     end
 
-    if ball.x >= VIRTUAL_WIDTH then
-        ball.x = VIRTUAL_WIDTH - 4
+    if ball.x >= vir_width then
+        ball.x = vir_width - 4
         ball.dx = -ball.dx
         love.audio.play(sounds.wall)
     end
@@ -115,44 +114,37 @@ function love.update(dt)
 
 --PLAYER MOVEMENT
     if love.keyboard.isDown('w') then
-        player1.dy = -PADDLE_SPEED
-    
-    elseif love.keyboard.isDown('s') then
-        player1.dy = PADDLE_SPEED
+        player1.dy = -character_speed
 
+    elseif love.keyboard.isDown('s') then
+        player1.dy = character_speed
     else
         player1.dy = 0
     end
 
     -- Horizontal movement for player 1
     if love.keyboard.isDown('a') then
-        player1.dx = -PADDLE_SPEED
-
+        player1.dx = -character_speed
     elseif love.keyboard.isDown('d') then
-        player1.dx = PADDLE_SPEED
-
+        player1.dx = character_speed
     else
         player1.dx = 0
     end
 -- PLAYER 2 MOVEMENT
     if love.keyboard.isDown('up') then
 
-        player2.dy = -PADDLE_SPEED
-
+        player2.dy = -character_speed
     elseif love.keyboard.isDown('down') then
-        player2.dy = PADDLE_SPEED
-
+        player2.dy = character_speed
     else
         player2.dy = 0
     end
 
     -- Horizontal movement for player 2
     if love.keyboard.isDown('left') then
-        player2.dx = -PADDLE_SPEED
-
+        player2.dx = -character_speed
     elseif love.keyboard.isDown('right') then
-        player2.dx = PADDLE_SPEED
-
+        player2.dx = character_speed
     else
 
         player2.dx = 0
@@ -189,16 +181,16 @@ function love.draw()
     love.graphics.setFont(smallFont)
 
     if gameState == 'start' then
-        love.graphics.printf('Twilight Paradox!', 0, 220, VIRTUAL_WIDTH, 'center')
+        love.graphics.printf('Twilight Paradox!', 0, 220, vir_width, 'center')
     else
-        love.graphics.printf('Twilight Paradox!', 0, 220, VIRTUAL_WIDTH, 'center')
+        love.graphics.printf('Twilight Paradox!', 0, 220, vir_width, 'center')
     end
 
     love.graphics.setFont(scoreFont)
-    love.graphics.print(tostring(player1Score), VIRTUAL_WIDTH / 2 - 50, 
-        VIRTUAL_HEIGHT -60)
-    love.graphics.print(tostring(player2Score), VIRTUAL_WIDTH / 2 + 30,
-        VIRTUAL_HEIGHT - 60)
+    love.graphics.print(tostring(player1Score), vir_width / 2 - 50, 
+        vir_height -60)
+    love.graphics.print(tostring(player2Score), vir_width / 2 + 30,
+        vir_height - 60)
 
     player1:render()
     player2:render()
