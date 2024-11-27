@@ -17,7 +17,7 @@ function love.load()
 --LOAD ASSETS    
     witch = love.graphics.newImage('witch.png')
     snitch = love.graphics.newImage('asnitch.png')
-    backimg = love.graphics.newImage('background.jpg')
+    backimg = love.graphics.newImage('backg.jpg')
 
         
     love.window.setTitle('Twilight Paradox')
