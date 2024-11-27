@@ -12,7 +12,7 @@ Welcome to **Twilight Paradox**, an exhilarating two-player game inspired by the
 - [Contributing](#contributing)
 - [Contact](#contact)
 
-[![Watch the video](https://cloud-d80pvpdr0-hack-club-bot.vercel.app/0screenshot_from_2024-11-27_19-51-00.png)]([https://cloud-6mlelrwwe-hack-club-bot.vercel.app/0screencast_from_2024-11-27_19-49-26.mp4](https://cloud-g76uwli2p-hack-club-bot.vercel.app/02024-11-27_21-13-25.mp4))
+[![Watch the video](https://cloud-d80pvpdr0-hack-club-bot.vercel.app/0screenshot_from_2024-11-27_19-51-00.png)](https://cloud-g76uwli2p-hack-club-bot.vercel.app/02024-11-27_21-13-25.mp4)
 ## Features
 
 - **Unique Gameplay**: Experience the challenge of controlling two identical characters, adding a layer of confusion and excitement.
