@@ -69,6 +69,9 @@ To get started with **Twilight Paradox**, follow these simple steps:
     4. Push to the branch (git push origin feature-branch).
     5. Open a Pull Request.
 
+## Assets
+Background Image: https://unsplash.com/photos/silhouette-of-trees-during-red-moon-2Ni0lCRF9bw
+
 ## Contact
 
 For inquiries, suggestions, or feedback, feel free to reach out:
