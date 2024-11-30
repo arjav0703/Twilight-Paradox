@@ -13,9 +13,9 @@ character_speed = 200
 function love.load()
     
 --LOAD ASSETS    
-    witch = love.graphics.newImage('witch3.png')
-    snitch = love.graphics.newImage('asnitch.png')
-    backimg = love.graphics.newImage('backg4.png')
+    witch = love.graphics.newImage('assets/witch3.png')
+    snitch = love.graphics.newImage('assets/asnitch.png')
+    backimg = love.graphics.newImage('assets/backg4.png')
 
         
     love.window.setTitle('Twilight Paradox')
@@ -24,9 +24,9 @@ function love.load()
 
     math.randomseed(os.time())
 
-    smallFont = love.graphics.newFont('font.ttf', 48)
+    smallFont = love.graphics.newFont('assets/font.ttf', 48)
 
-    scoreFont = love.graphics.newFont('font.ttf', 82)
+    scoreFont = love.graphics.newFont('assets/font.ttf', 82)
 
     love.graphics.setFont(smallFont)
 
