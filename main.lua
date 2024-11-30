@@ -1,5 +1,3 @@
-push = require 'push'
-
 Class = require 'class'
 
 require 'char'
@@ -8,40 +6,36 @@ require 'Ball'
 
 win_width = 1280
 win_height = 720
-vir_width = 432
-vir_height = 243
-character_speed = 100
+vir_width = 1280
+vir_height = 720
+character_speed = 200
 
 function love.load()
     
 --LOAD ASSETS    
-    witch = love.graphics.newImage('witch.png')
+    witch = love.graphics.newImage('witch3.png')
     snitch = love.graphics.newImage('asnitch.png')
-    backimg = love.graphics.newImage('backg.jpg')
+    backimg = love.graphics.newImage('backg4.png')
 
         
     love.window.setTitle('Twilight Paradox')
+    love.window.setMode(1280,720)
 
 
     math.randomseed(os.time())
 
-    smallFont = love.graphics.newFont('font.ttf', 8)
+    smallFont = love.graphics.newFont('font.ttf', 48)
 
-    scoreFont = love.graphics.newFont('font.ttf', 32)
+    scoreFont = love.graphics.newFont('font.ttf', 82)
 
     love.graphics.setFont(smallFont)
 
-    push:setupScreen(vir_width, vir_height, win_width, win_height, {
-        fullscreen = false,
-        resizable = false,
-        vsync = true
-    })
-
+    
     player1Score = 0
     player2Score = 0
 
-    player1 = char(vir_width - 100, vir_height - 200, 5, 20)
-    player2 = char(vir_width - 100, vir_height - 100, 5, 20)
+    player1 = char(vir_width - 300, vir_height - 400, 5, 20)
+    player2 = char(vir_width - 300, vir_height - 200, 5, 20)
 
     ball = Ball(vir_width / 2 - 2, vir_height / 2 - 2, 4, 4)
 
@@ -175,36 +169,22 @@ end
 
 
 function love.draw()
-    push:apply('start')
+    
     love.graphics.draw(backimg,0,0)
     
     love.graphics.setFont(smallFont)
 
     if gameState == 'start' then
-        love.graphics.printf('Twilight Paradox!', 0, 220, vir_width, 'center')
-    else
-        love.graphics.printf('Twilight Paradox!', 0, 220, vir_width, 'center')
+        love.graphics.printf('Press enter to start', 0, 220, vir_width, 'center')
     end
 
     love.graphics.setFont(scoreFont)
-    love.graphics.print(tostring(player1Score), vir_width / 2 - 50, 
-        vir_height -60)
-    love.graphics.print(tostring(player2Score), vir_width / 2 + 30,
-        vir_height - 60)
+    love.graphics.print(tostring(player1Score), vir_width / 2 - 100,vir_height - 80)
+    love.graphics.print(tostring(player2Score), vir_width / 2 + 100,vir_height - 80)
 
     player1:render()
     player2:render()
 
-    ball:render()
-
-    displayFPS()
-
-    push:apply('end')
+    ball:render()    
 end
-
-function displayFPS()
-    
-    love.graphics.setFont(smallFont)
-    love.graphics.setColor(0, 255/255, 0, 255/255)
-    love.graphics.print('FPS: ' .. tostring(love.timer.getFPS()), 10, 10)
-end
+--
