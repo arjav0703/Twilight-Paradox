@@ -8,7 +8,7 @@ win_width = 1280
 win_height = 720
 vir_width = 1280
 vir_height = 720
-character_speed = 200
+character_speed = 250
 
 function love.load()
     
@@ -56,7 +56,7 @@ function love.update(dt)
     --COLLISION OF BALL WITH EITHER OF THE PLAYERS
     if gameState == 'play' then
         if ball:collides(player1) then
-            ball.dx = -ball.dx * 1.1
+            ball.dx = -ball.dx * 1.06
             ball.x = player1.x + 5
             player1Score = player1Score + 1
             love.audio.play(sounds.score)

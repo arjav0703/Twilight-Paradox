@@ -6,7 +6,7 @@ function Ball:init(x, y, width, height)
     self.width = width
     self.height = height
     self.dy = math.random(2) == 1 and -100 or 100
-    self.dx = math.random(2) == 1 and math.random(-80, -100) or math.random(80, 100)
+    self.dx = 150
 end
 
 function Ball:collides(paddle)
