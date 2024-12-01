@@ -73,7 +73,7 @@ To get started with **Twilight Paradox**, follow these simple steps:
     5. Open a Pull Request.
 
 ## Assets
-Background Image: https://unsplash.com/photos/silhouette-of-trees-during-red-moon-2Ni0lCRF9bw
+### Thanks to Firefly (AI) for image assets.
 
 ## Contact
 
