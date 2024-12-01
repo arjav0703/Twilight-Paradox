@@ -1,7 +1,9 @@
 # Twilight Paradox
 
 
-Welcome to **Twilight Paradox**, an exhilarating two-player game inspired by the magical sport of Quidditch! In this fast-paced, multiplayer experience, players take control of two identical witch characters in a whimsical world where the objective is to chase and catch a mystical ball. 
+Welcome to **Twilight Paradox**, an exhilarating two-player game inspired by the magical sport of Quidditch! In this fast-paced, multiplayer experience, players take control of two identical witch characters in a whimsical world where the objective is to chase and catch a mystical ball.
+
+## [Play in browser](https://arjav0703.itch.io/twilight-paradox) 
 
 ## Table of Contents
 
