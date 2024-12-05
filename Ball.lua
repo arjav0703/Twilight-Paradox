@@ -9,12 +9,22 @@ function Ball:init(x, y, width, height)
     self.dx = 150
 end
 
-function Ball:collides(paddle)
-    if self.x > paddle.x + paddle.width or paddle.x > self.x + self.width then
+function Ball:collides(char)
+    local ballLeft = self.x - self.width / 2
+    local ballRight = self.x + self.width / 2
+    local ballTop = self.y - self.height / 2
+    local ballBottom = self.y + self.height / 2
+
+    local charLeft = char.x
+    local charRight = char.x + char.width
+    local charTop = char.y
+    local charBottom = char.y + char.height
+
+    if ballRight < charLeft or charLeft > ballLeft then
         return false
     end
 
-    if self.y > paddle.y + paddle.height or paddle.y > self.y + self.height then
+    if ballBottom < charTop or charTop > ballTop then
         return false
     end 
 
