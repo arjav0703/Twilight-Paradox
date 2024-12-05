@@ -72,9 +72,9 @@ To get started with **Twilight Paradox**, follow these simple steps:
     4. Push to the branch (git push origin feature-branch).
     5. Open a Pull Request.
 
-## Assets
+## Credits
 ### Thanks to Firefly (AI) for image assets.
-
+### Thanks to CS50 Game Development course by Harvard for teaching me this.
 ## Contact
 
 For inquiries, suggestions, or feedback, feel free to reach out:
