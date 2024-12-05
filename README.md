@@ -75,6 +75,7 @@ To get started with **Twilight Paradox**, follow these simple steps:
 ## Credits
 ### Thanks to Firefly (AI) for image assets.
 ### Thanks to CS50 Game Development course by Harvard for teaching me this.
+### Sounds are obtained from CS50's REPO: https://github.com/games50/pong
 ## Contact
 
 For inquiries, suggestions, or feedback, feel free to reach out:
