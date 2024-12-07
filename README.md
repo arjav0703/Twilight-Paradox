@@ -1,5 +1,6 @@
 # Twilight Paradox
-
+### THIS PROJECT WAS BUILT BY FOLLOWING A VIDEO BY CS50:https://youtu.be/GfwpRU0cT10?si=IE8swgdiLnKc7srg
+### I HAVE ADDED NEW ASSETS AND MADE MAJOR CHANGES IN COLLISION DETECTION AND SCORING SYSTEM
 
 Welcome to **Twilight Paradox**, an exhilarating two-player game inspired by the magical sport of Quidditch! In this fast-paced, multiplayer experience, players take control of two identical witch characters in a whimsical world where the objective is to chase and catch a mystical ball.
 
